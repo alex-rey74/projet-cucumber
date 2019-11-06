@@ -2,13 +2,15 @@
 
 Fonctionnalité: Est-ce qu'on est vendredi ?
     Tout le monde veut savoir si on est vendredi.
-
-    Scénario: Mercredi n'est pas vendredi
-        Etant donné qu'aujourd'hui c'est "mercredi"
+    
+    Plan du scénario: Aujourd'hui on est ou pas vendredi
+        Etant donné qu'aujourd'hui c'est "<jour>"
         Quand je demande si on est vendredi
-        Alors on devrait me répondre "non"
+        Alors on devrait me répondre "<réponse>"
 
-    Scénario: Vendredi est vendredi
-        Etant donné qu'aujourd'hui c'est "vendredi"
-        Quand je demande si on est vendredi
-        Alors on devrait me répondre "oui"
+    Exemples:
+        | jour              | réponse |
+        | vendredi          | oui |
+        | mercredi          | non |
+        | dimanche          | non |
+        | n'importe quoi    | non |
