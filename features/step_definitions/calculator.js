@@ -11,6 +11,10 @@ When('je veux les ajouter', function () {
     this.result = calculator.add(this.operand1, this.operand2)
 });
 
+When('je veux les soustraire', function () {
+    this.result = calculator.substract(this.operand1, this.operand2)
+  });
+
 Then('le résultat devrait être {int}', function (int) {
     assert.equal(this.result, int)
 });
